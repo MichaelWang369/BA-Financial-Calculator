@@ -1,0 +1,86 @@
+body{
+    background: url(../images/banner.jpg) no-repeat 0px 0px;
+}
+ul{margin:0;padding:0}
+.banner{
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    min-height:900px;
+}
+.logo {
+    text-align: left;
+    margin-top: 3em;
+}
+.copyrights{
+    text-indent:-9999px;
+    height:0;
+    line-height:0;
+    font-size:0;
+    overflow:hidden;
+}
+.logo  h1 {
+    font-size: 3.5em;
+    text-align:center
+}
+.logo  h1:hover{
+    text-decoration:none;
+}
+.container{width:1200px;margin:0 auto}
+.setup{     
+    background: #fff none repeat scroll 0 0;
+    left: 20%;
+    padding: 2em 20px;
+    position: absolute;
+    top: 20.5%;
+    width: 30%;
+    height:550px;
+    box-shadow: 0px 5px 5px #000000;
+}
+.bold{font-weight:bold}
+.container .cur{color:#FF0066}
+.container .inverst{color:#660099}
+.container .all{color:#FF6600}
+.spearte{height:0px;}
+.tableforcurrent{display:none}
+#result{
+    background: #fff none repeat scroll 0 0;
+    left: 50%;
+    position: absolute;
+    padding: 2em 20px;
+    top: 20.5%;
+    width:40%;
+    display:none;
+    height:550px;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+#result li{float:left;width:33%}
+#sliders {
+    display:none;
+}
+
+#sliders li {
+    margin-bottom: 10px;
+}
+#sliders .slider{float:left;width:50%;margin-right:20px;}
+
+#sliders div {
+    margin-bottom: 5px;
+}
+
+li{list-style:none}
+.title{
+    float:left;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right:26px;
+    line-height:26px;
+    width:28%
+}
+.clear{clear:both}
+#totalMoney{margin-top:20px;margin-bottom:20px;margin-left:0;display:none}
+#totalMoney .totalslider{margin-right:20px;width:50%;float:left;}
+#setTotal{margin-top:20px;}
