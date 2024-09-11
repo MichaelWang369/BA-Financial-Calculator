@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>金融资产组合配置器</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/jquery-ui.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/canvasjs.min.js"></script>
+<script src="js/cal.js"></script>
+</head>
+<body>
+<div class='container'>
+    <div class="banner" id="home">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>金融资产组合配置器</h1>
+                </div>
+                <div class="setup">
+                    <h1>设置</h1>
+                    <div id='setTotal'>
+                        <div class='title'>输入总资产</div><input type='text' value='' id='total'  onkeyup="value=value.replace(/[^\d]/g,'')">&nbsp;万元
+                        <div class='clear'></div>
+                    </div>
+                    <div  id="totalMoney">
+                        <div class='title cur'>流动资产总额</div>
+                        <div class="totalslider"></div>
+                        <div class="values cur"><span class='value'>0</span>万元</div>
+                    </div>
+
+                    <div class='clear'></div>
+
+                    <ul id="sliders">
+                        <li>
+                        <div class='title cur'>现金</div>
+                        <div class="cashslider slider"></div>
+                        <div class="values cur"><span class='value'>0</span>万元</div>
+                        <div class='clear'></div>
+                        </li>
+                        <li>
+                        <div class='title cur'>活期存款</div>
+                        <div class="currentslider slider"></div>
+                        <div class="values cur"><span class='value'>0</span>万元</div>
+                        <div class='clear'></div>
+                        </li>
+                        <li>
+                        <div class='title cur'>定期存款</div>
+                        <div class="timeslider slider"></div>
+                        <div class="values cur"><span class='value'>0</span>万元</div>
+                        <div class='clear'></div>
+                        </li>
+                        <li>
+                        <div class='title cur'>货币市场基金</div>
+                        <div class="marketslider slider"></div>
+                        <div class="values cur"><span class='value'>0</span>万元</div>
+                        <div class='clear'></div>
+                        </li>
+                    </ul>
+                    <input type='hidden' value='0' id='test' /> 
+                    <table class="table table-bordered tableforcurrent">
+                        <thead>
+                            <tr>
+                                <th class='cur'>流动性资产</th>
+                                <th class='cur'>现金</th>
+                                <th class='cur'>活期存款</th>
+                                <th class='cur'>定期存款</th>
+                                <th class='cur'>货币市场基金</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class='bold cur'>投资额度</td>
+                            <td class='cashtotal cur'></td>
+                            <td class='currenttotal cur'></td>
+                            <td class='timetotal cur'></td>
+                            <td class='markettotal cur'></td>
+                        </tr>
+                        <tr>
+                            <td class='bold cur'>收益率</td>
+                            <td class='cash'>0</td>
+                            <td class='current'>0.35</td>
+                            <td class='time'>2</td>
+                            <td class='market'>4</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+                <div id="result">
+                    <table class="table table-bordered">
+                        <tbody>
+                        <tr class='all'>
+                            <td>金融资产总额</td>
+                            <td class='alltotal'></td>
+                            <td>金融资产组合收益率</td>
+                            <td class='allper'></td>
+                            <td>金融资产年收益</td>
+                            <td class='allget'></td>
+                        </tr>
+                        <tr class='cur'>
+                            <td>流动性资产总额</td>
+                            <td class='assetstotal'></td>
+                            <td>流动性资产组合收益率</td>
+                            <td class='cashper'></td>
+                            <td>流动性资产年收益</td>
+                            <td class='cashget'></td>
+                        </tr>
+                        <tr class='inverst'>
+                            <td>投资性资产总额</td>
+                            <td class='investmenttotal'></td>
+                            <td>投资性资产资产组合收益率</td>
+                            <td class='investmentper'>8</td>
+                            <td>投资性资产年收益</td>
+                            <td class='investmentget'></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    <div class='spearte'>&nbsp;</div>
+                    <div id="pie" style="height: 300px; width: 50%;float:left"></div>
+	                <div id="colunm" style="height: 300px; width: 50%;float:left;"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
