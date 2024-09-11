@@ -1,1 +1,1 @@
-==BA Financial Calculator==
+#BA Financial Calculator
